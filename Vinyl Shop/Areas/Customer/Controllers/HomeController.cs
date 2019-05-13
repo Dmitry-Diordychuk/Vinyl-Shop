@@ -10,6 +10,7 @@ namespace Vinyl_Shop.Controllers
 {
     public class HomeController : Controller
     {
+        [Area("Customer")]
         public IActionResult Index()
         {
             return View();

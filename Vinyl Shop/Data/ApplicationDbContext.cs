@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Vinyl_Shop.Models;
 
 namespace Vinyl_Shop.Data
 {
@@ -12,5 +13,7 @@ namespace Vinyl_Shop.Data
             : base(options)
         {
         }
+
+        public DbSet<ProductTypes> ProductTypes { get; set; }
     }
 }
