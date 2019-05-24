@@ -55,16 +55,22 @@
                     @Html.DisplayFor(m => item.Genres)
                 </td>
                 <td>
-                    @Html.DisplayFor(m => item.Price)
+                    @String.Format("{0:c}",item.Price)
                 </td>
                 <td>
                     @Html.DisplayFor(m => item.Available)
                 </td>
                 <td>
+                    @if (!item.ProductTypes.Name.Equals("None"))
+                    {
                     @Html.DisplayFor(m => item.ProductTypes.Name)
+                    }
                 </td>
                 <td>
+                    @if (!item.SpecialTags.Name.Equals("None"))
+                    {
                     @Html.DisplayFor(m => item.SpecialTags.Name)
+                    }
                 </td>
                 <td>
                     <partial name="_TableButtonPartial" model="item.Id" />

@@ -7,7 +7,7 @@ namespace Vinyl_Shop.Utility
 {
     public class SD
     {
-        public const string DefaultProductImage = "default_product.jpg";
+        public const string DefaultProductImage = "default_image.jpg";
         public const string ImageFolder = @"images\ProductImage";
     }
 }
